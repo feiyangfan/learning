@@ -2,9 +2,11 @@
 
 #### Git related:
 
-git clone "url" is the way I should use to pull repo from a remote to local
+git clone "url" is the way I should use to clone repo from a remote to local
 
-git config can be used to config repo-specific config
+.gitconfig can be used to config repo-specific config
+
+.gitignore to add files that should be ignored from tracking
 
 git revert "a commit hash" to revert this commit
 
