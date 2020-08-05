@@ -1,33 +1,46 @@
-### learning
+## learning
 
-#### Git related:
+### Git related:
 
-**general** **workflow**: **modify things** -> **git add "file"** -> **git commit -m** 
+* **GENERAL:** 
 
-**git clone** "url" is the way I should use to clone repo from a remote to local
+  * workflow: **modify things** -> **git add "file"** -> **git commit -m** 
+  * commit often since I can always go back to a previous change
 
-**.gitconfig** can be used to config repo-specific config
+* **COMMAND:**
 
-**.gitignore** to add files that should be ignored from tracking
+  * **head points to current branch**
 
-**git revert "a commit hash"** to revert this commit
+  * **git clone "url"** to clone repo from a remote to local
 
-**git log** to find who did which commit, then use **git checkout "hash"** to go back to that commit
+  * **git revert "a commit hash"** to revert this commit
 
-**git restore** to restore deleted but not commited files
+  * **git log** to find who did which commit, then use **git checkout "hash"** to go back to that commit
 
-create new branch:
-  **git checkout -b "branch name"** to create a new ch 
+  * **git restore** to restore deleted but not commited files
 
-#### npm related:
+  * create new branch and work on different branches:
+    * **git checkout -b "branch name"** to create a new branch
+    * **git checkout "branch name"** to change to another branch
+    * my understanding: create branches when doing new works that might affect main branch or want to work seperately when working with a team
+  
+  * **git merge "branch name"**: merge with other branch/changes, accpet/reject changes then use **git add*
 
-npm install to install mising dependencies in package.json
+* **OTHERS:** 
 
-npm run <script> to run script in package.json
+  * **.gitconfig** can be used to config repo-specific config
+
+  * **.gitignore** to add files that should be ignored from tracking
+
+### npm related:
+
+**npm install** to install mising dependencies in package.json
+
+**npm run "script"** to run script in package.json
   
 ### resources:
 
-### Ideas and learning goals:
+## Ideas and learning goals:
 
 #### QoL:
 * todolist app
