@@ -16,6 +16,8 @@ npm install to install mising dependencies in package.json
 
 npm run <script> to run script in package.json
   
+### resources:
+
 ### Ideas and learning goals:
 
 #### QoL:
