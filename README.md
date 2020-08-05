@@ -2,13 +2,22 @@
 
 #### Git related:
 
-git clone "url" is the way I should use to clone repo from a remote to local
+**general** **workflow**: **modify things** -> **git add "file"** -> **git commit -m** 
 
-.gitconfig can be used to config repo-specific config
+**git clone** "url" is the way I should use to clone repo from a remote to local
 
-.gitignore to add files that should be ignored from tracking
+**.gitconfig** can be used to config repo-specific config
 
-git revert "a commit hash" to revert this commit
+**.gitignore** to add files that should be ignored from tracking
+
+**git revert "a commit hash"** to revert this commit
+
+**git log** to find who did which commit, then use **git checkout "hash"** to go back to that commit
+
+**git restore** to restore deleted but not commited files
+
+create new branch:
+  **git checkout -b "branch name"** to create a new ch 
 
 #### npm related:
 
