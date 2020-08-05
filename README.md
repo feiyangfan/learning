@@ -6,6 +6,8 @@
 
   * workflow: **modify things** -> **git add "file"** -> **git commit -m** 
   * commit often since I can always go back to a previous change
+  
+* **PULL REQUEST:** request origin/autorized-place to pull my codes to review and possibly merge them
 
 * **COMMAND:**
 
@@ -28,8 +30,6 @@
   * **git remote add "remote/origin" "name"**
   
   * **git push "remote" "branch":** publish local changes to the central repository
-  
-* **PULL REQUEST:** request origin/autorized-place to pull my codes to review and possibly merge them
 
 * **OTHERS:** 
 
