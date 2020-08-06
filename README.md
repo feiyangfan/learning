@@ -36,7 +36,7 @@
 ### resources:
 Resources that I found very useful:  
 Git-related:  
-         [Scott Hanselman - Git Basics](https://youtu.be/WBg9mlpzEYU)   [Scott Hanselman - Git Pull request](https://youtu.be/WBg9mlpzEYU)   [Scott Hanselman - Git Rebase](https://youtu.be/WBg9mlpzEYU) 
+         [Scott Hanselman - Git Basics](https://youtu.be/WBg9mlpzEYU)   [Scott Hanselman - Git Pull request](https://youtu.be/Mfz8NQncwiQ)   [Scott Hanselman - Git Rebase](https://youtu.be/hae9zg0-sZY)   [Scott Hanselman - Git Push](https://youtu.be/dgOpnebZkRo)
 
 
 
