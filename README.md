@@ -20,7 +20,7 @@
     * **git checkout -b "branch name"** to create a new branch
     * **git checkout "branch name"** to change to another branch
     * **My understanding**: create branches when doing new works that might affect main branch or want to work seperately when working with a team
-  * **git merge "branch name"**: merge with other branch/changes, accpet/reject changes then use **git add*
+  * **git merge "branch name"**: merge with other branch/changes, accpet/reject changes then use **git add**
   * **git remote add "remote/origin" "name"**
   * **git push "remote" "branch":** publish local changes to the central repository
 
@@ -34,6 +34,11 @@
 **npm run "script"** to run script in package.json.  
   
 ### resources:
+Resources that I found very useful:  
+Git-related:  
+         [Scott Hanselman - Git Basics](https://youtu.be/WBg9mlpzEYU)   [Scott Hanselman - Git Pull request](https://youtu.be/WBg9mlpzEYU)   [Scott Hanselman - Git Rebase](https://youtu.be/WBg9mlpzEYU) 
+
+
 
 ## Ideas and learning goals:
 
