@@ -506,3 +506,12 @@ class solution:
                 x -= 1
             MAX = max(MAX, area)
         return MAX
+
+####################################################################
+    # ! Find number of 1 bits in a number
+    def hammingWeight(self, n: int) -> int:
+        counter = 0
+        while n != 0:
+            n = n & n-1
+            counter += 1
+        return counter
