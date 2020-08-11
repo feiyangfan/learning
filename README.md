@@ -5,6 +5,7 @@
 * **GENERAL:** 
 
   * workflow: **modify things** -> **git add "file"** -> **git commit -m** 
+  
   * commit often since I can always go back to a previous commit
   
 * **PULL REQUEST:** request origin/autorized-place to pull my codes to review and possibly merge them
@@ -20,12 +21,17 @@
     * **git checkout -b "branch name"** to create a new branch
     * **git checkout "branch name"** to change to another branch
     * **My understanding**: create branches when doing new works that might affect main branch or want to work seperately when working with a team
-  * **git merge "branch name"**: merge with other branch/changes, accpet/reject changes then use **git add**
+  * **git merge "branch name"**: merge with other branch/changes, accpet/reject changes then use **git add** to add merged files
   * **git remote add "remote/origin" "name"**
   * **git push "remote" "branch":** publish local changes to the central repository
 
 * **OTHERS:** 
-
+  * How to upload local repo to remote:
+  		* **git init** at local repo
+  		* **git add .** to add all local repo files
+  		* **git commit -m**
+  		* **git remote add "remote name" "url"**
+  		* **git push -u "remote name" "remote branch"**
   * **.gitconfig** can be used to config repo-specific config
   * **.gitignore** to add files that should be ignored from tracking
 
