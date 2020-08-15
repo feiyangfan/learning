@@ -6,14 +6,15 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class solution:
     ##################################################################################
     # brute force O(n^2)
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
+            for j in range(i + 1, len(nums)):
                 if nums[j] == target - nums[i]:
-                    return [i,j]
+                    return [i, j]
 
     # one pass
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -25,10 +26,10 @@ class solution:
             else:
                 return [seen[diff], i]
 
-##################################################################################
+    ##################################################################################
     # reverse a int, if int overflow, return 0. return sign correctly.
     def reverse(self, x: int) -> int:
-        if x >= 2**31-1 or x <= -2**31:
+        if x >= 2 ** 31 - 1 or x <= -(2 ** 31):
             return 0
         else:
             strg = str(x)
@@ -38,23 +39,23 @@ class solution:
                 temp = strg[1:]
                 temp2 = temp[::-1]
                 revst = "-" + temp2
-            if int(revst) >= 2**31-1 or int(revst) <= -2**31:
+            if int(revst) >= 2 ** 31 - 1 or int(revst) <= -(2 ** 31):
                 return 0
             else:
                 return int(revst)
 
-##################################################################################
+    ##################################################################################
     def isPalindrome(self, x: int) -> bool:
-            if x < 0:
-                return False
-            else:
-                s = str(x)
-                for i in range(int(len(s)/2)):
-                    if s[i] != s[len(s)-1-i]:
-                        return False
-                return True
+        if x < 0:
+            return False
+        else:
+            s = str(x)
+            for i in range(int(len(s) / 2)):
+                if s[i] != s[len(s) - 1 - i]:
+                    return False
+            return True
 
-##################################################################################
+    ##################################################################################
     # brute force
     def romanToInt(self, s: str) -> int:
         total = 0
@@ -104,37 +105,37 @@ class solution:
                 i += 1
         return total
 
-    #smart:
+    # smart:
     # @param {string} s
     # @return {integer}
     def romanToInt(self, s):
-        roman = {'M': 1000,'D': 500 ,'C': 100,'L': 50,'X': 10,'V': 5,'I': 1}
+        roman = {"M": 1000, "D": 500, "C": 100, "L": 50, "X": 10, "V": 5, "I": 1}
         z = 0
         for i in range(0, len(s) - 1):
-            if roman[s[i]] < roman[s[i+1]]:
+            if roman[s[i]] < roman[s[i + 1]]:
                 z -= roman[s[i]]
             else:
                 z += roman[s[i]]
         return z + roman[s[-1]]
 
-##################################################################################
+    ##################################################################################
     # Find longest common prefix
 
     def longestCommonPrefix(self, strs):
-            """
+        """
             :type strs: List[str]
             :rtype: str
             """
-            if not strs:
-                return ""
-            shortest = min(strs,key=len)
-            for i, ch in enumerate(shortest):
-                for other in strs:
-                    if other[i] != ch:
-                        return shortest[:i]
-            return shortest
+        if not strs:
+            return ""
+        shortest = min(strs, key=len)
+        for i, ch in enumerate(shortest):
+            for other in strs:
+                if other[i] != ch:
+                    return shortest[:i]
+        return shortest
 
-###############################################################################
+    ###############################################################################
     # Find if a string contain valid brackets:
 
     def isValid(self, s: str) -> bool:
@@ -151,7 +152,7 @@ class solution:
                 return False
         return stack == []
 
-############################################################################
+    ############################################################################
     # Definition for singly-linked list.
     class ListNode:
         def __init__(self, val=0, next=None):
@@ -171,15 +172,14 @@ class solution:
         cur.next = l1 or l2
         return newnode.next
 
-
-############################################################################
+    ############################################################################
 
     def removeDuplicates(self, nums: List[int]) -> int:
         seen = {}
         i = 0
         while i < len(nums):
             if nums[i] in seen:
-                nums[:] = nums[:i] + nums[i + 1:]
+                nums[:] = nums[:i] + nums[i + 1 :]
             else:
                 seen[nums[i]] = True
                 i += 1
@@ -191,29 +191,28 @@ class solution:
             if nums[i] != nums[i + 1]:
                 nums[x] = nums[i + 1]
                 x += 1
-        return (x)
+        return x
 
-############################################################################
+    ############################################################################
 
     def removeElement(self, nums: List[int], val: int) -> int:
         i = 0
         while i < len(nums):
             if nums[i] == val:
-                nums[:] = nums[:i] + nums[i + 1:]
+                nums[:] = nums[:i] + nums[i + 1 :]
             else:
                 i += 1
         return len(nums)
 
-############################################################################
-    #Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+    ############################################################################
+    # Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
     def strStr(self, haystack: str, needle: str) -> int:
         if needle not in haystack:
             return -1
         else:
             return haystack.index(needle)
 
-
-############################################################################
+    ############################################################################
 
     def searchInsert(self, nums: List[int], target: int) -> int:
         index = 0
@@ -224,12 +223,13 @@ class solution:
                 index = i + 1
         return index
 
-###########################################################################
+    ###########################################################################
 
     def countAndSay(self, n: int) -> str:
-        if n == 1: return "1"
+        if n == 1:
+            return "1"
         s = self.countAndSay(n - 1)
-        i, ch, tmp = 0, s[0], ''
+        i, ch, tmp = 0, s[0], ""
         for j in range(1, len(s)):
             if s[j] != ch:
                 tmp += str(j - i) + ch
@@ -274,8 +274,6 @@ class solution:
         #         result += str(cnt) + str(cur)
         # return result
 
-
-
     #####################################################
 
     def maxSubArray(self, nums: List[int]) -> int:
@@ -319,12 +317,11 @@ class solution:
         return m
 
     ####################################################################################################
-    #Given a string s consists of upper/lower-case alphabets and empty space characters ' ',
+    # Given a string s consists of upper/lower-case alphabets and empty space characters ' ',
     # return the length of last word (last word means the last appearing word if we loop from left to right)
     # in the string.
     def lengthOfLastWord(self, s: str) -> int:
-        return len(s.strip().split(' ')[-1])
-
+        return len(s.strip().split(" ")[-1])
 
     ####################################################################################################
     # Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
@@ -349,10 +346,10 @@ class solution:
         r = bin(a + b)
         return r[2:]
 
-    #normay way:
+    # normay way:
     def addBinary(self, a: str, b: str) -> str:
         carry = 0
-        result = ''
+        result = ""
 
         a = list(a)
         b = list(b)
@@ -367,7 +364,6 @@ class solution:
             carry //= 2
 
         return result[::-1]
-
 
     ###################################################################################
     def mySqrt(self, x: int) -> int:
@@ -387,7 +383,6 @@ class solution:
         # of where it would have been (rounding down). If we were rounding up,
         # we would return lo
         return hi
-
 
     #######################################################################################
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
@@ -469,15 +464,16 @@ class solution:
         for i in range(len(s)):
             res = max(self.helper(s, i, i), self.helper(s, i, i + 1), res, key=len)
         return res
+
     # get the longest palindrome, l, r are the middle indexes
     # from inner to outer
     def helper(self, s, l, r):
         while l >= 0 and r < len(s) and s[l] == s[r]:
             l -= 1
             r += 1
-        return s[l + 1:r]
+        return s[l + 1 : r]
 
-##################################################################################
+    ##################################################################################
     # brute force
     # def maxArea(self, height: List[int]) -> int:
     #     max_area = 0
@@ -494,7 +490,7 @@ class solution:
         :type height: List[int]
         :rtype: int
         """
-        MAX = 0 
+        MAX = 0
         x = len(height) - 1
         y = 0
         while x != y:
@@ -507,11 +503,11 @@ class solution:
             MAX = max(MAX, area)
         return MAX
 
-####################################################################
+    ####################################################################
     # ! Find number of 1 bits in a number
     def hammingWeight(self, n: int) -> int:
         counter = 0
         while n != 0:
-            n = n & n-1
+            n = n & n - 1
             counter += 1
         return counter
