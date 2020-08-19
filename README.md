@@ -1,7 +1,7 @@
 ## Learning
 
 ### General: 
-* Consistency: make sure when developing, keep everything clean, easy to navigate. Also, easy to understand for later reviews
+* **Consistency**: make sure when developing, keep everything clean, easy to navigate. Also, easy to understand for later reviews  
 
 ### Git related:
 
@@ -27,8 +27,7 @@
   * **git push "remote" "branch":** publish local changes to the central repository
 
 * **OTHERS:** 
-  * How to upload local repo to remote:
-  
+  * How to upload local repo to remote:  
   		* **git init** at local repo
   		* **git add .** to add all local repo files
   		* **git commit -m**
@@ -45,14 +44,14 @@
   		* **git commit -m**  
   		* **git remote add "remote name" "url"**  
   		* **git push -u "remote name" "remote branch"**  
-  * **.gitconfig** can be used to config repo-specific config  
-  * **.gitignore** to add files that should be ignored from tracking  
+  * **.gitconfig**: used to config repo-specific config  
+  * **.gitignore**: used to add files that should be ignored from tracking and commited  
 
 ### npm related:
 **npm install** to install mising dependencies in package.json.  
 **npm run "script"** to run script in package.json.  
   
-### Useful Resources:
+### Useful resources:
 Git:  [Scott Hanselman's YouTube](https://youtu.be/WBg9mlpzEYU)
 
 
