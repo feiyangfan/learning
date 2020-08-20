@@ -26,26 +26,17 @@
   * **git remote add "remote/origin" "name"**
   * **git push "remote" "branch":** publish local changes to the central repository
 
-* **OTHERS:** 
-  * How to upload local repo to remote:  
-  		* **git init** at local repo
-  		* **git add .** to add all local repo files
-  		* **git commit -m**
-  		* **git remote add "remote name" "url"**
-  		* **git push -u "remote name" "remote branch"**
-  		
-  * workflow: **modify things** -> **git add "file"** -> **git commit -m** 
-  * **.gitconfig** can be used to config repo-specific config
-  * **.gitignore** to add files that should be ignored from tracking
-
-  * How to upload local repo to remote:  
-  		* **git init** at local repo  
+* **OTHERS:**
+  * How to upload local repo to remote:
+  		  * **git init** at local repo  
   		* **git add .** to add all local repo files  
   		* **git commit -m**  
   		* **git remote add "remote name" "url"**  
   		* **git push -u "remote name" "remote branch"**  
-  * **.gitconfig**: used to config repo-specific config  
-  * **.gitignore**: used to add files that should be ignored from tracking and commited  
+  		
+  * workflow: **modify things** -> **git add "file"** -> **git commit -m** 
+  * **.gitconfig** can be used to config repo-specific config
+  * **.gitignore** to add files that should be ignored from tracking
 
 ### npm related:
 **npm install** to install mising dependencies in package.json.  
