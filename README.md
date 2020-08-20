@@ -28,11 +28,11 @@
 
 * **OTHERS:**
   * How to upload local repo to remote:
-  		  * **git init** at local repo  
-  		* **git add .** to add all local repo files  
-  		* **git commit -m**  
-  		* **git remote add "remote name" "url"**  
-  		* **git push -u "remote name" "remote branch"**  
+    * **git init** at local repo
+    * **git add .** to add all local repo files  
+    * **git commit -m**  
+  	 * **git remote add "remote name" "url"**  
+    * **git push -u "remote name" "remote branch"**  
   		
   * workflow: **modify things** -> **git add "file"** -> **git commit -m** 
   * **.gitconfig** can be used to config repo-specific config
