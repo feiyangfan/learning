@@ -44,7 +44,7 @@
 **npm build** a script that is used to build that we can test out/release
 
 ### web development related:
-see my-website readme page
+see [my-website readme page](https://github.com/feiyangfan/my-website)
 
 ### Useful resources:
 Git:  [Scott Hanselman's YouTube](https://youtu.be/WBg9mlpzEYU)
