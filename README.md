@@ -44,7 +44,8 @@
 **npm build** a script that is used to build that we can test out/release
 
 ### web development related:
-see [my-website readme page](https://github.com/feiyangfan/my-website)
+1. Code split: split codes to several files, and only send js that required to display on current screen to users. Use state management. [Link](https://youtu.be/bb6RCrDaxhw)
+2. see [my-website readme page](https://github.com/feiyangfan/my-website)
 
 ### Useful resources:
 Git:  [Scott Hanselman's YouTube](https://youtu.be/WBg9mlpzEYU)
@@ -54,12 +55,12 @@ Git:  [Scott Hanselman's YouTube](https://youtu.be/WBg9mlpzEYU)
 
 #### web
 * ~~basic html/css/javascript~~
-* <s>react</s>
+* react
 * node.js and express
 * how to connect frontend to backend
 * one database service
 
-#### desktop
+#### ios
 * swift
 
 
