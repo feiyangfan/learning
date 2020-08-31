@@ -46,6 +46,9 @@
 ### web development related:
 1. Code split: split codes to several files, and only send js that required to display on current screen to users. Use state management. [Link](https://youtu.be/bb6RCrDaxhw)
 2. see [my-website readme page](https://github.com/feiyangfan/my-website)
+3. Frontend: see
+4. Backend: see
+5. Database: see
 
 ### Useful resources:
 Git:  [Scott Hanselman's YouTube](https://youtu.be/WBg9mlpzEYU)
