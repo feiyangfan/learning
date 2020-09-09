@@ -45,10 +45,10 @@
 
 ### web development related:
 1. Code split: split codes to several files, and only send js that required to display on current screen to users. Use state management. [Link](https://youtu.be/bb6RCrDaxhw)
-2. see [my-website readme page](https://github.com/feiyangfan/my-website)
-3. Frontend: see
-4. Backend: see
-5. Database: see
+2. Some general notes: see [my-website readme](https://github.com/feiyangfan/my-website)
+3. Frontend: see [my-website frontend readme](https://github.com/feiyangfan/my-website/frontend)
+4. Backend: see [my-website backend readme](https://github.com/feiyangfan/my-website/backend)
+5. Database: see [my-website database readme](https://github.com/feiyangfan/my-website/database)
 
 ### Useful resources:
 Git:  [Scott Hanselman's YouTube](https://youtu.be/WBg9mlpzEYU)
@@ -58,10 +58,10 @@ Git:  [Scott Hanselman's YouTube](https://youtu.be/WBg9mlpzEYU)
 
 #### web
 * ~~basic html/css/javascript~~
-* react
-* node.js and express
+* **Frontend**: react
+* **Backend**: **javascript**:node.js and express, **java**: spring
 * how to connect frontend to backend
-* one database service
+* database(mongoDB or MySQL) and how to connect to it
 
 #### ios
 * swift
