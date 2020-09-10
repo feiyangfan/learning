@@ -51,20 +51,27 @@
 5. Database: see [my-website database readme](https://github.com/feiyangfan/my-website/database)
 
 ### Useful resources:
-Git:  [Scott Hanselman's YouTube](https://youtu.be/WBg9mlpzEYU)
+Git-related:  
+[Some youtube videos from Scott Hanselman](https://youtu.be/WBg9mlpzEYU)  
+[.gitignore documentation](https://git-scm.com/docs/gitignore)  
+
+Other:  
+[Spring boot official documentation](https://spring.io/projects/spring-boot)
 
 
 ## Learning goals:
 
-#### web
-* ~~basic html/css/javascript~~
+#### web development
+* basic html/css/javascript
 * **Frontend**: react
-* **Backend**: **javascript**:node.js and express, **java**: spring
+* **Backend**: 
+	* **javascript**: node.js and express, 
+	* **java**: spring boot
 * how to connect frontend to backend
 * database(mongoDB or MySQL) and how to connect to it
 
-#### ios
-* swift
+#### mobile development
+* ios: swift
 
 
   
