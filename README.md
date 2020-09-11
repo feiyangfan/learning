@@ -1,15 +1,16 @@
 ## Learning
 
 ### General: 
-* **Consistency**: make sure when developing, keep everything clean, easy to navigate. Also, easy to understand for later reviews  
+* **Consistency**: One of the most **IMPORTANT** thing in development. Make sure when developing, keep everything clean, easy to navigate. Use symbols, styles, comments, etc.. in a consistent manner. That is, do not use different things for the same problem, use one style and stick to it. Another reason is that it is easy to understand for later reviews  
 
 ### Git related:
 
 * **GENERAL:** 
 
-  * commit small chunks of codes at a time so its easier to read what were doen and what was worked on.
+  * commit a small chunk of codes at a time so its easier to understand what was worked on and easy to go back to a previous commit if something goes wrong.
   
 * **PULL REQUEST:** request origin/autorized-place to pull my codes to review and possibly merge them
+	* When submitting pulling requests, whenever possible, make sure to split codes and only **submit a small chunk** at a time (couple hundreds maxmium) instead of thousands of lines of code, because it is easier for reviewer to review and easy for myself to keep track of what have been submitted.
 
 * **COMMAND:**
   * **head points to current branch**
