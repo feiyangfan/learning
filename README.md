@@ -39,12 +39,15 @@
   * **.gitconfig** can be used to config repo-specific config
   * **.gitignore** to add files that should be ignored from tracking
 
-### npm related:
+
+
+### web development related:
+#### npm related:
 **npm install** to install mising dependencies in package.json.  
 **npm run "script"** to run script in package.json.  
 **npm build** a script that is used to build that we can test out/release
 
-### web development related:
+#### Development 
 1. Code split: split codes to several files, and only send js that required to display on current screen to users. Use state management. [Link](https://youtu.be/bb6RCrDaxhw)
 2. Some general notes: see [my-website readme](https://github.com/feiyangfan/my-website)
 3. Frontend: see [my-website frontend readme](https://github.com/feiyangfan/my-website/tree/master/frontend)
