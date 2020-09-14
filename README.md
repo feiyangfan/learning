@@ -1,9 +1,9 @@
-## Learning
 
-### General: 
+
+## General: 
 * **Consistency**: One of the most **IMPORTANT** thing in development. Make sure when developing, keep everything clean, easy to navigate. Use symbols, styles, comments, etc.. in a consistent manner. That is, do not use different things for the same problem, use one style and stick to it. Another reason is that it is easy to understand for later reviews  
 
-### Git related:
+## Git related:
 
 * **GENERAL:** 
 
@@ -41,7 +41,7 @@
 
 
 
-### web development related:
+## Web development related:
 #### npm related:
 **npm install** to install mising dependencies in package.json.  
 **npm run "script"** to run script in package.json.  
@@ -54,7 +54,7 @@
 4. Backend: see [my-website backend readme](https://github.com/feiyangfan/my-website/tree/master/backend)
 5. Database: see [my-website database readme](https://github.com/feiyangfan/my-website/tree/master/database)
 
-### Useful resources:
+## Useful resources:
 Git-related:  
 [Some youtube videos from Scott Hanselman](https://youtu.be/WBg9mlpzEYU)  
 [.gitignore documentation](https://git-scm.com/docs/gitignore)  
@@ -76,6 +76,9 @@ Other:
 
 #### mobile development
 * ios: swift
+
+#### algorithm design and efficiency:
+* clrs
 
 
   
