@@ -49,9 +49,9 @@
 
 #### Development 
 1. Code split: split codes to several files, and only send js that required to display on current screen to users. Use state management. [Link](https://youtu.be/bb6RCrDaxhw)
-2. Some general notes: see [my-website readme](https://github.com/feiyangfan/my-website)
-3. Frontend: see [my-website frontend readme](https://github.com/feiyangfan/my-website/tree/master/frontend)
-4. Backend: see [my-website backend readme](https://github.com/feiyangfan/my-website/tree/master/backend)
+2. Some notes: see [notes I took when develop my-daily-planner](https://github.com/feiyangfan/my-daily-planner)
+3. Frontend: React
+4. Backend: Express
 5. Database: Relational(SQL) vs document-oriented database(NoSQL)
 
 ## Useful resources:
