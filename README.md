@@ -42,7 +42,7 @@
 
 
 ## Web development related:
-#### npm related:
+#### npm  
 **npm install** to install mising dependencies in package.json.  
 **npm run "script"** to run script in package.json.  
 **npm build** a script that is used to build that we can test out/release
@@ -52,7 +52,7 @@
 2. Some general notes: see [my-website readme](https://github.com/feiyangfan/my-website)
 3. Frontend: see [my-website frontend readme](https://github.com/feiyangfan/my-website/tree/master/frontend)
 4. Backend: see [my-website backend readme](https://github.com/feiyangfan/my-website/tree/master/backend)
-5. Database: see [my-website database readme](https://github.com/feiyangfan/my-website/tree/master/database)
+5. Database: Relational(SQL) vs document-oriented database(NoSQL)
 
 ## Useful resources:
 Git-related:  
