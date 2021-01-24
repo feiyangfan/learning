@@ -8,6 +8,7 @@
 * **GENERAL:** 
 
   * commit a small chunk of codes at a time so its easier to understand what was worked on and easy to go back to a previous commit if something goes wrong.
+  * branch early, and branch often
   
 * **PULL REQUEST:** request origin/autorized-place to pull my codes to review and possibly merge them
 	* When submitting pulling requests, whenever possible, make sure to split codes and only **submit a small chunk** at a time (couple hundreds maxmium) instead of thousands of lines of code, because it is easier for reviewer to review and easy for myself to keep track of what have been submitted.
