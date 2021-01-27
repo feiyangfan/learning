@@ -1,44 +1,43 @@
 # Git notes
 
-- [Resources](#resources)
-- [HEAD](#head)
-- [Relative refs](#relative-refs)
-- [Move around in git](#move-around-in-git)
-- [Multiple parents: Specifying Parents](#multiple-parents-specifying-parents)
-- [Branch and checkout](#branch-and-checkout)
-- [Merge](#merge)
-- [Rebase](#rebase)
-- [Merge vs rebase](#merge-vs-rebase)
-- [Reversing Changes in git](#reversing-changes-in-git)
-- [Cherry-pick](#cherry-pick)
-- [Interactive rebase](#interactive-rebase)
-- [Locally stacked commits](#locally-stacked-commits)
-- [Juggling Commits](#juggling-commits)
-- [Git tags](#git-tags)
-- [Git Describe](#git-describe)
-- [Remote Repo](#remote-repo)
-	- [Pros](#pros)
-	- [Special property](#special-property)
-	- [Commands](#commands)
-	- [Git Clone \<remote url>](#git-clone-remote-url)
-	- [git fetch](#git-fetch)
-	- [git fetch with arguments](#git-fetch-with-arguments)
-	- [git pull](#git-pull)
-	- [git pull with arguments](#git-pull-with-arguments)
-	- [git push](#git-push)
-	- [git push with arguments](#git-push-with-arguments)
-	- [Use nothing as fetch/push source arguments](#use-nothing-as-fetchpush-source-arguments)
-	- [Diverged Work](#diverged-work)
-	- [stuck on rejected push](#stuck-on-rejected-push)
-	- [Remote tracking](#remote-tracking)
+- [Git notes](#git-notes)
+    + [Workflow](#workflow)
+    + [HEAD](#head)
+    + [Relative refs](#relative-refs)
+    + [Move around in git](#move-around-in-git)
+    + [Multiple parents: Specifying Parents](#multiple-parents--specifying-parents)
+    + [Branch and checkout](#branch-and-checkout)
+    + [Merge](#merge)
+    + [Rebase](#rebase)
+    + [Merge vs rebase](#merge-vs-rebase)
+    + [Reversing Changes in git](#reversing-changes-in-git)
+    + [Cherry-pick](#cherry-pick)
+    + [Interactive rebase](#interactive-rebase)
+    + [Locally stacked commits](#locally-stacked-commits)
+    + [Juggling Commits](#juggling-commits)
+    + [Git tags](#git-tags)
+    + [Git Describe](#git-describe)
+    + [Remote Repo](#remote-repo)
+      - [Pros](#pros)
+      - [Special property](#special-property)
+      - [Commands](#commands)
+        * [Git Clone \<remote url>](#git-clone---remote-url-)
+        * [git fetch](#git-fetch)
+        * [git fetch with arguments](#git-fetch-with-arguments)
+        * [git pull](#git-pull)
+        * [git pull with arguments](#git-pull-with-arguments)
+        * [git push](#git-push)
+        * [git push with arguments](#git-push-with-arguments)
+      - [Use nothing as fetch/push source arguments](#use-nothing-as-fetch-push-source-arguments)
+      - [Diverged Work](#diverged-work)
+      - [stuck on rejected push](#stuck-on-rejected-push)
+      - [Remote tracking](#remote-tracking)
+    + [Misc](#misc)
+    + [Resources](#resources)
 - [Credit](#credit)
 
-### Resources
-* https://learngitbranching.js.org/ 
-	* The website I used to learn git interactively. The reason why I recommand this website is that it offers interactive ways of learning git:
-		* It has graphs showing how commands work
-		* It has a good flow of learning, starts from the basic than dig deeply into git.
-
+### Workflow
+* git add -> git commit -> git push
 
 ### HEAD
 1. HEAD is the symbolic name for the currently checked out commit -- it's essentially what commit you're working on top of
@@ -244,6 +243,22 @@ Rebasing modifies the (apparent) history of the commit tree.
 * Creating own tracking branch
 	* Method 1: **git checkout -b totallyNotMain origin/main**
 	* Method 2: **git branch -u o/main totallyNotMain**
+
+### Misc
+* .gitignore: used to add stuff that should be ignored by git
+* .gitconfig: config git at this current repo or globally
+* commit a small chunk of codes at a time so its easier to understand what was worked on and easy to go back to a previous commit if something goes wrong.
+* branch early, and branch often
+* PULL REQUEST: request origin/autorized-place to pull my codes to review and possibly merge them
+	* When submitting pulling requests, whenever possible, make sure to split codes and only submit a small chunk at a time (couple hundreds maxmium) instead of thousands of lines of code, because it is easier for reviewer to review and easy for myself to keep track of what have been submitted.
+
+### Resources
+* https://learngitbranching.js.org/ 
+	* The website I used to learn git interactively. The reason why I recommand this website is that it offers interactive ways of learning git:
+		* It has graphs showing how commands work
+		* It has a good flow of learning, starts from the basic than dig deeply into git.
+* https://youtu.be/WBg9mlpzEYU
+	* A youtube video from Scott Hanselman talking about some insight of git related knowledge
 
 # Credit
 * Some of the examples and conclusions come from https://learngitbranching.js.org/, which is a great website worth checking out if people wants to learn git
