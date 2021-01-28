@@ -1,6 +1,7 @@
 # Git notes
 
 ## Table of Contents
+
 - [Git notes](#git-notes)
     + [Workflow](#workflow)
     + [HEAD](#head)
@@ -14,8 +15,6 @@
     + [Reversing Changes in git](#reversing-changes-in-git)
     + [Cherry-pick](#cherry-pick)
     + [Interactive rebase](#interactive-rebase)
-    + [Locally stacked commits](#locally-stacked-commits)
-    + [Juggling Commits](#juggling-commits)
     + [Git tags](#git-tags)
     + [Git Describe](#git-describe)
     + [Remote Repo](#remote-repo)
@@ -30,12 +29,16 @@
         * [git push](#git-push)
         * [git push with arguments](#git-push-with-arguments)
       - [Use nothing as fetch/push source arguments](#use-nothing-as-fetch-push-source-arguments)
-      - [Diverged Work](#diverged-work)
-      - [stuck on rejected push](#stuck-on-rejected-push)
       - [Remote tracking](#remote-tracking)
+    + [Common problems and their solutions](#common-problems-and-their-solutions)
+      - [stuck on rejected push](#stuck-on-rejected-push)
+      - [Diverged Work](#diverged-work)
+      - [Locally stacked commits](#locally-stacked-commits)
+      - [Juggling Commits](#juggling-commits)
     + [Misc](#misc)
     + [Resources](#resources)
 - [Credit](#credit)
+
 
 ### Workflow
 * git add -> git commit -> git push
@@ -120,25 +123,6 @@ Rebasing modifies the (apparent) history of the commit tree.
 3. git will open up a UI to show you which commits are about to be copied below the target of the rebase. It also shows their commit hashes and messages, which is great for getting a bearing on what's what
 4. There are many possible operations you can do with git rebase
 
-
-### Locally stacked commits
-1. Happens when you have some local commits that you do not want to be pushed to the main branch
-2. We can use **git cherry-pick** or **git rebase -i**
-
-
-### Juggling Commits
-1. Want to make changes to a previous commit
-2. Using **git rebase -i**:
-	* We will re-order the commits so the one we want to change is on top with git rebase -i
-	* We will git commit --amend to make the slight modification
-	* Then we will re-order the commits back to how they were previously with git rebase -i
-	* Finally, we will move main to this updated part of the tree to finish the level (via the method of your choosing)
-3. The above method can introduce rebase conflicts
-4. Using **git cherry-pick**
-	* cherry pick the commit to fix
-	* cherry pick the commits after the previous commit
-	* done
-
 ### Git tags
 1. **git tag \<tag name> \<commit>** to tag a specific commit
 2. **git tag \<tag name>** to tag HEAD's commit
@@ -215,22 +199,6 @@ Rebasing modifies the (apparent) history of the commit tree.
 * **git push origin :foo** deletes the foo branch both locally and remotely
 * **git fetch origin :foo** create a foo branch locally
 
-
-
-#### Diverged Work
-* Imagine you clone a repository on Monday and start dabbling on a side feature. By Friday you are ready to publish your feature -- but oh no! Your coworkers have written a bunch of code during the week that's made your feature out of date (and obsolete). They've also published these commits to the shared remote repository, so now your work is based on an old version of the project that's no longer relevant
-* Two ways to fix this problem
-	* **rebase**
-		* **git pull --rebase**
-	* **merge**
-		* **git pull**
-
-#### stuck on rejected push
-* Imagin your push is rejected because pushing to main is not permitted and you need to do a pull request, now you are stuck on main.
-	* create a new branch called feature
-	* git reset main back to the previous origin/main commit
-	* git push origin feature	
-
 #### Remote tracking
 * Connection between **main** and **origin/main** is explained simply by the "remote tracking" property of branches. The **main** branch is set to track **origin/main** -- this means there is an implied merge target and implied push destination for the **main** branch.
 * when you clone a repository with git, this property is actually set for you automatically.
@@ -244,6 +212,39 @@ Rebasing modifies the (apparent) history of the commit tree.
 * Creating own tracking branch
 	* Method 1: **git checkout -b totallyNotMain origin/main**
 	* Method 2: **git branch -u o/main totallyNotMain**
+
+### Common problems and their solutions
+
+#### stuck on rejected push
+* Imagin your push is rejected because pushing to main is not permitted and you need to do a pull request, now you are stuck on main.
+	* create a new branch called feature
+	* git reset main back to the previous origin/main commit
+	* git push origin feature	
+
+#### Diverged Work
+* Imagine you clone a repository on Monday and start dabbling on a side feature. By Friday you are ready to publish your feature -- but oh no! Your coworkers have written a bunch of code during the week that's made your feature out of date (and obsolete). They've also published these commits to the shared remote repository, so now your work is based on an old version of the project that's no longer relevant
+* Two ways to fix this problem
+	* **rebase**
+		* **git pull --rebase**
+	* **merge**
+		* **git pull**
+
+#### Locally stacked commits
+1. Happens when you have some local commits that you do not want to be pushed to the main branch
+2. We can use **git cherry-pick** or **git rebase -i**
+
+#### Juggling Commits
+1. Want to make changes to a previous commit
+2. Using **git rebase -i**:
+	* We will re-order the commits so the one we want to change is on top with git rebase -i
+	* We will git commit --amend to make the slight modification
+	* Then we will re-order the commits back to how they were previously with git rebase -i
+	* Finally, we will move main to this updated part of the tree to finish the level (via the method of your choosing)
+3. The above method can introduce rebase conflicts
+4. Using **git cherry-pick**
+	* cherry pick the commit to fix
+	* cherry pick the commits after the previous commit
+	* done
 
 ### Misc
 * .gitignore: used to add stuff that should be ignored by git
