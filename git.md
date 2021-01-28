@@ -1,5 +1,6 @@
 # Git notes
 
+## Table of Contents
 - [Git notes](#git-notes)
     + [Workflow](#workflow)
     + [HEAD](#head)
