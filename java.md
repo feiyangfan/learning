@@ -1,7 +1,3 @@
-
-
-
-
 ## Before anything
 * Jan 28 Thu, 2021 Sunny start  
 * Prior knowledge: Python(2.5 years, several school assignments, leetcode language), C(1.5years, several school assignments), Java(1 semester, only 1 assignment), Javascript(0.5 year, 2 projects and 2 assignments)
@@ -31,14 +27,12 @@
 	<img src="./images/java-images/java-platform.gif" alt="image from Oracle java tutorial website" width="300"/>
 	<p align="center">*Ilustration(image from Oracle)*</p>
 
-## New section, no name yet
-
-### Varibles
+## Varibles
 * Similar to C, need to declare type when creating a variable
 * ```int num; num = 1;```
 * ```type variable_name = value;```
 
-#### final variable
+### final variable
 * add ```final``` keyword so that others cannot overwirte existing values
 
 * ```
@@ -46,11 +40,11 @@ final int num = 1;
 num = 2; // will generate error
  ```
 
-#### Type
+### Type
 <img src="./images/java-images/java-var-type.png" alt="image from Oracle java tutorial website" width="500"/>
 	<p align="center">*Ilustration(image from W3Schools)*</p>
 
-#### Type Casting
+### Type Casting
 * Widening casting (auto)
 	* from smaller type to larger 
 	<pre>int intA = 9;
@@ -59,10 +53,12 @@ num = 2; // will generate error
 	* from larger to smaller
 	* ```double doubleA = 9.0; int intA = (int) doubleA;```
 
-#### Operator
+### Operator
 * / : ```int a = 10 / 3; // a = 3, use floor```
+
+## Method
 	
-### public static void main(String[] args)
+## public static void main(String[] args)
 * the main() method
 * required
 * Any code inside the main() method will be executed.
